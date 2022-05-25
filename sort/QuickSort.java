@@ -63,4 +63,41 @@ public class QuickSort {
         arr[a] = arr[b];
         arr[b] = tmp;
     }
+
+    /* 퀵소트 숏코드
+
+    private static void quickSort(int[] list, int l, int r) {
+
+        if (l >= r) return;
+
+        int m = partition(list, l, r);
+        quickSort(list, l, m-1);
+        quickSort(list, m, r);
+
+    }
+
+
+    private static int partition(int[] list, int l, int r) {
+
+        int p = list[(l+r)>>1];
+
+        while (l <= r) {
+
+            while (list[l] < p) l++;
+            while (list[r] > p) r--;
+
+            if (l <= r) swap(list, l++, r--);
+
+        }
+
+        return l;
+
+    }
+
+    private static void swap(int[] list, int a, int b) {
+        int t = list[a];
+        list[a] = list[b];
+        list[b] = t;
+    }
+     */
 }
